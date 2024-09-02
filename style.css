@@ -30,8 +30,8 @@ svg{
     transform: translate(-50%, -50%);
 }
 .navbar {
-    height: 45px;
-    width: 90vw;
+    height: 50px;
+    width: 75vw;
     margin: 0 auto;
     margin-top: 20px;
     padding-left: 1em;
@@ -40,27 +40,25 @@ svg{
     display: block;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15),
       0px 10px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 100px;
+    border-radius: 9999px;
     position: relative;
-    background-color: #fff;
+    background-color: #e5e7eb;
     display: flex;
     align-items: center;
     justify-content: left;
     position: relative;
     z-index: 2;
-    font-size: small;
+    font-size: 0.9rem;
+    opacity: 0.95;
+    backdrop-filter: blur(15px);
+    display: block;
+    padding-top: 15px;
+    text-align: center;
   }
   
-  /* .navbar .logo {
-    text-transform: uppercase;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 300;
-    font-size: 16pt; */
-  /* } */
-  
-  /* .navbar .logo a {
+  .navbar .logo1 a {
     text-decoration: none;
-    color: #090909;
+    color: inherit;
   }
   
   .navbar ul {
@@ -76,17 +74,28 @@ svg{
   
   .navbar ul li a {
     padding: 0.25em 1em 0.25em 1em;
-    color: #090909;
+    color: #6e7485;
     text-decoration: none;
-    /* font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400; */
-  /* }
+    transition: 300ms;
+    }
   
   .navbar a:hover {
-    color: #777;
-    transition-duration: 0.3s;
+    color: black;
+    transition: 300ms;
+    font-size: 1rem;
   }
-   */
+  .navbar a{
+    transition: 300ms;
+  }
+  .navbar .logo1{
+    position: absolute;
+    left: 25px;
+  }
+  .navbar .active{
+    background-color: #F3F4F6;
+    color: black;
+    border-radius: 9999px;
+  }
 
 @media (prefers-color-scheme: light) {
     .background {
@@ -97,5 +106,22 @@ svg{
 @media (prefers-color-scheme: dark) {
     .background {
         background: linear-gradient(#381D84, #FEFEFE 90%);
+    }
+    .navbar{
+      background-color: #030712;
+      opacity: 0.85;
+    }
+    .navbar ul li a{
+      color: white;
+    }
+    .navbar a:hover{
+      color: #acacac;
+    }
+    .navbar .logo1 .a{
+      color: white;
+    }
+    .navbar .active{
+      color: #ffffff;
+      background-color: #1f2733;
     }
   }
