@@ -17,15 +17,18 @@ svg{
 }
 .arc-text{
     color: black;
-}
+    text-shadow: 0 0 20px #659ff0, 0 0 30px #b5d4ff, 0 0 40px #3e7ed7, 0 0 50px #2781ff, 0 0 60px #ededed, 0 0 70px #ffffff, 0 0 80px #ffffff;
+  }
 .flow-text{
-  background: linear-gradient(#06279F, #020E39);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(#00186f, #020E39); */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  color: black;
+  text-shadow: 0 0 20px #659ff0, 0 0 30px #b5d4ff, 0 0 40px #3e7ed7, 0 0 50px #2781ff, 0 0 60px #ededed, 0 0 70px #ffffff, 0 0 80px #ffffff;
 }
 .center{
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -38,8 +41,6 @@ svg{
     padding-right: 1em;
     box-sizing: border-box;
     display: block;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15),
-      0px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 9999px;
     position: relative;
     background-color: #e5e7eb;
@@ -105,7 +106,7 @@ svg{
   
 @media (prefers-color-scheme: dark) {
     .background {
-        background: linear-gradient(#381D84, #FEFEFE 90%);
+        background: linear-gradient(#1A1036 5%,#3d1c98 30%, #7859D0 70%);
     }
     .navbar{
       background-color: #030712;
