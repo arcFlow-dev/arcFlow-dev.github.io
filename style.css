@@ -17,14 +17,12 @@ svg{
 }
 .arc-text{
     color: black;
-    text-shadow: 0 0 20px #659ff0, 0 0 30px #b5d4ff, 0 0 40px #3e7ed7, 0 0 50px #2781ff, 0 0 60px #ededed, 0 0 70px #ffffff, 0 0 80px #ffffff;
   }
 .flow-text{
-  /* background: linear-gradient(#00186f, #020E39); */
-  /* background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
+  background: linear-gradient(#00186f, #020E39);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: black;
-  text-shadow: 0 0 20px #659ff0, 0 0 30px #b5d4ff, 0 0 40px #3e7ed7, 0 0 50px #2781ff, 0 0 60px #ededed, 0 0 70px #ffffff, 0 0 80px #ffffff;
 }
 .center{
     position: absolute;
