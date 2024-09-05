@@ -1,126 +1,224 @@
-*{
-    font-family: "SF Pro Display";
+* {
+  font-family: "SF Pro Display";
 }
-html, body { 
-    margin:0;
-    padding:0;
-    overflow:hidden;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-.background{
-    color-scheme: light dark;
-    height: 100vh;
+.background {
+  color-scheme: light dark;
+  height: 100vh;
 }
-svg{
-    position: fixed;
-    bottom: 0;
-    z-index: -1;
+svg {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
 }
-.arc-text{
-    color: black;
-  }
-.flow-text{
-  background: linear-gradient(#00186f, #020E39);
+.arc-text {
+  color: black;
+}
+.flow-text {
+  background: linear-gradient(#00186f, #020e39);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;
 }
-.center{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.center {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .navbar {
-    height: 50px;
-    width: 75vw;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding-left: 1em;
-    padding-right: 1em;
-    box-sizing: border-box;
-    display: block;
-    border-radius: 9999px;
-    position: relative;
-    background-color: #e5e7eb;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    position: relative;
-    z-index: 2;
-    font-size: 0.9rem;
-    opacity: 0.95;
-    backdrop-filter: blur(15px);
-    display: block;
-    padding-top: 15px;
-    text-align: center;
-  }
-  
-  .navbar .logo1 a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar ul li {
-    display: inline;
-    text-decoration: none;
-  }
-  
-  .navbar ul li a {
-    padding: 0.25em 1em 0.25em 1em;
-    color: #6e7485;
-    text-decoration: none;
-    transition: 300ms;
-    }
-  
-  .navbar a:hover {
-    color: black;
-    transition: 300ms;
-    font-size: 1rem;
-  }
-  .navbar a{
-    transition: 300ms;
-  }
-  .navbar .logo1{
-    position: absolute;
-    left: 25px;
-  }
-  .navbar .active{
-    background-color: #F3F4F6;
-    color: black;
-    border-radius: 9999px;
-  }
+  height: 50px;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 9999px;
+  position: relative;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  z-index: 2;
+  font-size: 0.9rem;
+  opacity: 0.95;
+  backdrop-filter: blur(15px);
+  display: block;
+  padding-top: 15px;
+  text-align: center;
+}
 
+.navbar .logo1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  text-decoration: none;
+}
+
+.navbar ul li a {
+  padding: 0.25em 1em 0.25em 1em;
+  color: #6e7485;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.navbar a:hover {
+  color: black;
+  transition: 300ms;
+  font-size: 1rem;
+}
+.navbar a {
+  transition: 300ms;
+}
+.navbar .logo1 {
+  position: absolute;
+  left: 25px;
+}
+.navbar .active {
+  background-color: #f3f4f6;
+  color: black;
+  border-radius: 9999px;
+}
+.w3-animate-fading {
+  animation: fading 10s infinite;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.w3-animate-opacity {
+  animation: opac 0.8s;
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.w3-animate-top {
+  position: relative;
+  animation: animatetop 1.5s;
+}
+@keyframes animatetop {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.w3-animate-left {
+  position: relative;
+  animation: animateleft 1.5s;
+}
+@keyframes animateleft {
+  from {
+    left: -500px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.w3-animate-right {
+  position: relative;
+  animation: animateright 1.5s;
+}
+@keyframes animateright {
+  from {
+    right: -500px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+.w3-animate-bottom {
+  position: relative;
+  animation: animatebottom 1s;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.w3-animate-zoom {
+  animation: animatezoom 0.6s;
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.w3-animate-input {
+  transition: width 0.4s ease-in-out;
+}
+.w3-animate-input:focus {
+  width: 100% !important;
+}
 @media (prefers-color-scheme: light) {
-    .background {
-        background: linear-gradient(#4583CC, #FEFEFE 90%);
-    }
+  .background {
+    background: linear-gradient(#4583cc, #fefefe 90%);
   }
-  
+}
+
 @media (prefers-color-scheme: dark) {
-    .background {
-        background: linear-gradient(#1A1036 5%,#3d1c98 30%, #7859D0 70%);
-    }
-    .navbar{
-      background-color: #030712;
-      opacity: 0.85;
-    }
-    .navbar ul li a{
-      color: white;
-    }
-    .navbar a:hover{
-      color: #acacac;
-    }
-    .navbar .logo1 .a{
-      color: white;
-    }
-    .navbar .active{
-      color: #ffffff;
-      background-color: #1f2733;
-    }
+  .background {
+    background: linear-gradient(#1a1036 5%, #3d1c98 30%, #7859d0 70%);
   }
+  .navbar {
+    background-color: #030712;
+    opacity: 0.8;
+  }
+  .navbar ul li a {
+    color: white;
+  }
+  .navbar a:hover {
+    color: #acacac;
+  }
+  .navbar .logo1 .a {
+    color: white;
+  }
+  .navbar .active {
+    color: #ffffff;
+    background-color: #1f2733;
+  }
+}
