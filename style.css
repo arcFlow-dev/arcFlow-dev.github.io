@@ -18,12 +18,20 @@ svg {
 }
 .arc-text {
   color: black;
+  text-shadow: -1px -1px 10px rgba(254, 254, 254, 1),
+    0px 4px 3px rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
 }
 .flow-text {
-  background: linear-gradient(#00186f, #020e39);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: black;
+  /* background: linear-gradient(#00186f, #020e39); */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  color: rgb(0, 56, 113);
+  text-shadow: -1px -1px 10px rgba(254, 254, 254, 1),
+    0px 4px 3px rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
 }
 .center {
   position: absolute;
