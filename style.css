@@ -20,8 +20,6 @@ svg {
   color: black;
   text-shadow: -1px -1px 10px rgba(254, 254, 254, 1),
     0px 4px 3px rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(2px);
-  border-radius: 20px;
   z-index: 999;
 }
 .flow-text {
@@ -31,8 +29,6 @@ svg {
   color: rgb(0, 56, 113);
   text-shadow: -1px -1px 10px rgba(254, 254, 254, 1),
     0px 4px 3px rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(2px);
-  border-radius: 20px;
   z-index: 998;
 }
 .center {
